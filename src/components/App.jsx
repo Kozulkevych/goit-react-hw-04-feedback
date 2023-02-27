@@ -24,20 +24,20 @@ export default function App() {
   const options = Object.keys(feedback);
   const total = good + neutral + bad;
   const positivePercentage = total > 0 ? Math.round((good / total) * 100) : 0;
-
+  // console.log(options);
   return (
     <Container>
       <Section>
         <TitleH1>
           <Span>PLEASE LEAVE FEEDBACK </Span>
         </TitleH1>
-        <FeedbackOptions options={options} onLeaveFeedback={LeaveFeedback} />
+        <FeedbackOptions options={options} LeaveFeedback={LeaveFeedback} />
       </Section>
 
       <Section>
         <TitleH2>Statistics</TitleH2>
         {!total ? (
-          <Notification message="There is no feedback" />
+          <Notification message="There is no feedback..." />
         ) : (
           <Statistics
             good={good}
