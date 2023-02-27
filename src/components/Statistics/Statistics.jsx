@@ -16,19 +16,19 @@ import {
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <StatList>
     <StatItem>
-       <BsEmojiHeartEyesFill/>
+       <BsEmojiHeartEyesFill fill="rgba(0, 128, 75, 0.7)" />
       <StatText>
         Good: <Value> {good}</Value>
       </StatText>
     </StatItem>
     <StatItem>
-        <BsEmojiNeutralFill/>
+        <BsEmojiNeutralFill fill="rgba(224, 201, 50, 0.6)" />
       <StatText>
         Neutral:<Value> {neutral}</Value>
       </StatText>
     </StatItem>
     <StatItem>
-       <BsEmojiFrownFill/>
+       <BsEmojiFrownFill fill="rgba(202, 30, 30, 0.6)" />
       <StatText>
         Bad:<Value> {bad}</Value>
       </StatText>

@@ -14,7 +14,6 @@ export const StatItem = styled.li`
   align-items: center;
   & > svg {
     margin-right: 8px;
-    fill: #dfdf0af4;
     height: 30px;
     width: 30px;
   }
